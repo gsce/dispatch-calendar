@@ -1,0 +1,222 @@
+﻿@charset "utf-8";
+ 	#calendarsetuptablepagebox {
+        position:absolute;
+	    width: 100%;
+	    height: 100%;
+	    z-index:0;
+	    //border: 1px solid blue;
+	    margin:0 auto;
+		background: black;
+	}
+
+	.variables {
+        display:none;
+ 	}
+
+    /* table header box */	
+ 
+	#calendarsetuptableheaderbox {
+        position:relative;
+	   //top:5%;
+        width:30%;
+        border:1px solid grey;
+        border-radius:5px;
+        //box-shadow: 5px 5px 10px #888888;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+	    background-color: #3B393A;
+    }
+  
+	#calendarsetuptablebox{
+        position:relative;
+	    top:1%;
+        // height:85%;
+        width:30%;
+        border:1px solid grey;
+        border-radius:5px;
+        //box-shadow: 5px 5px 10px #888888;
+        margin:0 auto;
+    }
+	
+    #calendarsetuptable {
+        table-layout:fixed;
+        width:100%;
+        overflow: scroll;
+	}	  
+	
+	#calendarsetuptable th,td {
+        padding: 5px;
+    }
+
+	#calendarsetuptable th {
+        color: white;
+        background-color: #3B393A;
+    }
+	
+    #calendarsetuptable tr:nth-child(even) { /*(even) or (2n 0)*/
+        background: #DCDCDC;
+    }
+
+    #calendarsetuptable tr:nth-child(odd) { /*(odd) or (2n 1)*/
+        background: WHITE;
+    }
+	
+	.calendarsetuptablecol1{
+        padding: 5px;
+  	    text-align: left;
+    }
+
+	.calendarsetuptablecol2{
+        padding: 5px;
+  	    text-align: left;
+	}
+
+	.calendarsetuptablecolhidden{
+	    display: none;
+	}
+
+	#calendarsetuptablefooterbox {
+        position:relative;
+	    top:2%;
+        width:30%;
+		height: 28px;
+        border:1px solid grey;
+        border-radius:5px;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+	    background-color: #3B393A;
+    }
+
+ 	/* Styles add account button*/
+	#calendarsetuptableadd {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#calendarsetuptabledone{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#calendarsetupformdone{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#calendarsetupformcancel{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#calendarsetupprint{
+        position:relative;
+	    float: left;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:none;	
+        margin:2px 3px 0px 3px;
+    }
+
+	#calendarsetupformcontainer {
+        position:absolute;
+	    display: none;
+	    width: 100%;
+	    left: 0%;
+	    height: 100%;
+	    z-index:10;
+	    margin:0 auto;
+		background: black;
+		color: white;
+    }
+	
+	.calendarsetupformheader{
+	    position:relative;
+	    width:30%;
+	    margin:0 auto;
+	    text-align:center;
+	    border:1px solid gray;
+	    border-radius:5px;
+		background: #3B393A;
+		color: white;
+	}
+
+	.calendarsetupformfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 15px 0 0 0;
+	}
+    
+	/** This styles the field name and positions it in the row */ 
+	.calendarsetupformfieldcol1{
+  	    display: inline-block;
+        position:relative;
+        // left:2%;
+        width:42%;
+		vertical-align: top;
+        text-align: right;
+	}
+	
+	/** This styles the input field and positions it in the row */ 
+	.calendarsetupformfieldcol2 {
+	    display: inline-block;
+        position: relative;
+	    left: 1%;
+        width: 27%;
+		vertical-align: top;
+        text-align: left;
+	}
+
+	.calendarsetupformfieldcol3 {
+	    display: inline-block;
+        position: relative;
+	    left: 2%;
+        width: 12%;
+		vertical-align: top;
+        text-align: right;
+		//border: 1px solid blue;
+	}
+	.calendarsetupformfieldcol4 {
+	    display: inline-block;
+        position: relative;
+	    left: 2%;
+        width: auto;
+		vertical-align: top;
+        text-align: left;
+	}
+
+	.calendarsetupformsavecancelbutton {
+        position:relative;
+	    //top:25%;
+        width:30%;
+		height: 28px;
+        border:1px solid grey;
+        border-radius:5px;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+        background: #3B393A;
+    }
+ 
+ 

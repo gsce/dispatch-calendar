@@ -1,0 +1,528 @@
+﻿@charset "utf-8";
+	.variables {
+        display:none;
+ 	}
+    /* table header box */	
+	.container {
+	   background: black;
+	}
+	#jobformdatetablebox{
+	    display:block;
+	    position: absolute;
+	    top: 0%;
+		left: 0%;
+        height:100%;
+        width:100%;
+	    background: transparent;
+		opacity: 0;
+		transition: all .5s;
+    }
+    #jobformdatetable{
+        table-layout:fixed;
+        width:100%;
+    }	  
+	.test {
+	  width: 100%;
+	}
+	input:focus, select:focus, textarea:focus {
+	   outline: none;
+       border-color: #9ecaed;
+       box-shadow: 0 0 0px 3px #058FFF; 
+    }
+	#jobformdatetable th,td {
+       overflow: hidden;
+       white-space:nowrap;
+    }
+	#jobformdatetable th {
+        color: white;
+        background-color: black;
+    }
+    #jobformdatetable tr { /*(even) or (2n 0)*/
+        background: #D7DBD7;
+     	color: black;
+    }
+	.jobformdatetablejobdaytypecell1{
+	    width: 7%;
+  	    text-align: left;
+	}
+	.jobformdatetablejobdaytypecell{
+	    width: 7%;
+  	    text-align: left;
+        padding-left: 5px;
+		background: black;
+		color: white;
+	}
+	.jobformdatetabledaynamecell{
+	    width: 3%;
+        padding-left: 5px;
+  	    text-align: left;
+    }
+	.jobformdatetabledatecell{
+	    width: 7%;
+        padding-left: 5px;
+  	    text-align: left;
+    }
+	.jobformdatetablestarttimecell{
+	    width: 7%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetableweightcell{
+	    width: 5%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetablejobhourscell{
+	    width: 7%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetablenumberofmencell{
+	    width: 5%;
+        padding-left: 5px;
+  	    text-align: left;
+        overflow: hidden;
+	}
+	.jobformdatetabledrivercell{
+	    width: 9%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetabledrivernumbercell{
+	    width: 5%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetablenamesofmencell{
+	    width: 26%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetabletrucknumbercell{
+	    width: 8%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetabletrailernumbercell{
+	    width: 8%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetablehaulingcell{
+	    width: 4%;
+        padding-left: 5px;
+  	    text-align: left;
+	}
+	.jobformdatetablecolhidden{
+	    display: none;
+	}
+	.jobformdatetabledaynoterow{
+	    width: 100%;
+        padding-left: 5px;
+  	    text-align: left;
+		background: #D7DBD7;
+		color: black;
+	}
+ 	/* Styles add account button*/
+	#jobformdatetableadd {
+        box-shadow: 5px 5px 10px #888888;
+	    text-align: left;
+		background: orange;
+ 		color: black;
+    }
+	#jobdateformcontainer {
+	    display: none;
+        position:absolute;
+		top: 0%;
+	    width: 100%;
+	    left: 0%;
+	    height: 100%;
+	    z-index:1000;
+	    background: transparent;
+	    margin:0 auto;
+		opacity: 0;
+		transition: all .5s;
+    }
+	.jobdateformheader{
+	    width:30%;
+	    margin:0 auto;
+	    text-align:center;
+		z-index:1001;
+	}
+	#jobdateformtopboxdiv {
+	    display: block;
+		position: absolute;
+	    width: 100%;
+	    left: 0%;
+	    height: 10%;
+	    z-index:1001;
+        background: black;
+        color: white;
+    }
+	#jobdateformleftboxdiv {
+	    display: block;
+		position: absolute;
+	    width: 18%;
+		top: 10%;
+	    left: 0%;
+	    height: 65%;
+	    z-index:1001;
+ 	    background: #3B393A;
+		color: white;
+    }
+	.jobdateformfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0% 0% 0%;
+	    z-index:1001;
+	}
+    .jobdateformfieldrow1 {
+        position:relative;
+        width: 100%;
+	    margin: 5px 0% 0% 0%;
+	    z-index:1001;
+	}
+	/** This styles the field name and positions it in the row */ 
+	.jobdateformfieldnamecol1{
+  	    display: inline-block;
+        position:relative;
+        left:0%;
+        width:25%;
+		vertical-align: top;
+        text-align:right;
+	    z-index:1001;
+	}
+	/** This styles the input field and positions it in the row */ 
+	.jobdateformfieldcol2 {
+	    display: inline-block;
+        position:relative;
+	    left:1%;
+        width:65%;
+		vertical-align: top;
+        text-align:left;
+	    z-index:1001;
+	}
+	.jobdateformfieldnamecol3 {
+	    display: inline-block;
+        position:absolute;
+	    left: 0%;
+        width: 15%;
+		vertical-align: top;
+        text-align:right;
+	    z-index:1001;
+	}
+	.jobdateformfieldcol4 {
+	    display: inline-block;
+        position:relative;
+	    left:16%;
+        width:84%;
+		vertical-align: top;
+        text-align:left;
+	    z-index:1001;
+	}
+	#calendaricon {
+		vertical-align: top;
+	}
+	#jobdateformrepeatdays {
+	    width: 40px;
+	}
+	#jobdateformcenter1boxdiv {
+	    display: block;
+        position:absolute;
+	    width: 14%;
+		top: 10%;
+	    left: 18%;
+	    height: 65%;
+	    z-index:1001;
+	    background: #3B393A;
+		color: white;
+    }
+	#jobdateformcenter2boxdiv {
+	    display: block;
+        position:absolute;
+	    width: 41%;
+		top: 10%;
+	    left: 32%;
+	    height: 65%;
+	    z-index:1001;
+		background: #3B393A;
+		color: white;
+    }
+	#jobdateformrightboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 27%;
+		top: 10%;
+	    left: 73%;
+	    height: 60%;
+	    z-index:1001;
+		background: #3B393A;
+		color: white;
+    }
+	#jobdateformbottomboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 100%;
+		top: 75%;
+	    left: 0%;
+	    height: 25%;
+	    z-index:1001;
+		background: #3B393A;
+		color: white;
+    }
+	.jobdateformsavecancelbutton {
+        position:absolute;
+        width:99%;
+        border:1px solid grey;
+        border-radius:5px;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+        background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+	    z-index:1002;
+    }
+ 	#jobdateformdone{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#jobdateformcancel{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#popupcalendariframe {
+	    display: none;
+		position: absolute;
+		height :400px;
+		width: 100%;
+		top: 0px;
+		left: 0%;
+		z-index:10000;
+		background-color:rgba(0,0,0,0.3);
+    }
+    #popupcalendarbox{
+	    position: absolute;
+		display:none;
+	    top: 0%;
+		left: 0%;
+        height:100%;
+        width:1600px;
+  	    z-index:300;
+	    color:black;
+	    box-sizing: border-box;
+	    word-wrap: break-word;
+		background: transparent;
+		overflow:hidden;
+		opacity: 0;
+		transition: all .5s;
+    }
+    #popupcalendartableheaderbox{
+	    position: absolute;
+	    top: 0%;
+		left: 0%;
+        height: 20px;
+        width:1600px;
+  	    z-index:310;
+	    color:white;
+	    box-sizing: border-box;
+	    word-wrap: break-word;
+		background: #3B393A;
+    }
+    #popupcalendartablebox{
+	    position: absolute;
+	    top: 20px;
+		left: 0%;
+        height:752px;
+        width:1600px;
+  	    z-index:310;
+	    color:black;
+	    box-sizing: border-box;
+	    word-wrap: break-word;
+		overflow-y:scroll;
+    }
+	.popupcalendartableheadersunday {
+	    display: inline-block;
+	    width: 222px;
+	    border-right: 1px solid white;
+  	    text-align: center;
+		background: #3B393A;
+		color: white;
+	}
+	.popupcalendartableheadersaturday {
+	    display: inline-block;
+	    width: 229px;
+	    border-left: 1px solid white;
+  	    text-align: center;
+		background: #3B393A;
+		color: white;
+	}
+    .popupcalendartableheaderweekday {
+	    display: inline-block;
+	    width: 225px;
+	    border-left: 1px solid white;
+	    border-right: 1px solid white;
+  	    text-align: center;
+		background:orange;
+		color: black;
+	}
+	.popupcalendartablesunday {
+	    display: inline-block;
+	    width: 222px;
+	    border-right: 1px solid white;
+	    border-bottom: 1px solid blue;
+  	    text-align: center;
+		background-image:url('bg2.jpg');
+        height:188px;
+	}
+	.popupcalendartablesaturday {
+	    display: inline-block;
+	    width: 224px;
+	    border-left: 1px solid white;
+	    border-bottom: 1px solid blue;
+  	    text-align: center;
+		background-image:url('bg2.jpg');
+        height:188px;
+	}
+    .popupcalendartableweekday {
+	    display: inline-block;
+	    width: 225px;
+	    border-left: 1px solid white;
+	    border-right: 1px solid white;
+	    border-bottom: 1px solid white;
+  	    text-align: center;
+	    color: white;
+		background: #3B393A;
+		height: 188px;
+	}
+	.popupcalendartabledaycellbutton {
+	    background: transparent;
+        border: none;
+		font-family: Arial;
+		color: red;
+		width:80%;
+		font-size:16px;
+	}
+    .popupcalendartabledaycellbuttonjob0 {
+        background-image: -moz-linear-gradient(top, #F9B327, #F9B327);
+		border:none;
+		-moz-border-radius: 3;
+		font-family: Arial;
+		color: black;
+		font-size:16px;
+		width: 80%;
+	}
+    .popupcalendartabledaycellbuttonjob1 {
+		background-image: -moz-linear-gradient(top, white, white);
+		border:none;
+		font-family: Arial;
+		color: black;
+		font-size:16px;
+		width: 80%;
+	}
+	.popupcalendartabledaycellbuttonjob2 {
+        background-image: -moz-linear-gradient(top, orange, orange);
+		border:none;
+		-moz-border-radius: 3;
+		font-family: Arial;
+		color: black;
+		font-size:16px;
+		width: 80%;
+	}
+	.popupcalendartabledaycellbuttonjob3 {
+        background-image: -moz-linear-gradient(top, yellow, yellow);
+		border:none;
+		-moz-border-radius: 3;
+		font-family: Arial;
+		color: black;
+		font-size:16px;
+		width: 80%;
+	}
+	.popupcalendartabledaycellbuttonjob4 {
+        background-image: -moz-linear-gradient(top, orange, orange);
+		border:none;
+		-moz-border-radius: 3;
+		font-family: Arial;
+		color: black;
+		font-size:16px;
+		width: 80%;
+	}
+	.popupcalendartabledaycellbuttonjob5 {
+        background-image: -moz-linear-gradient(top, orange, orange);
+		border:none;
+		-moz-border-radius: 3;
+		font-family: Arial;
+		color: black;
+		font-size:16px;
+		width: 80%;
+	}
+	#r1 {
+	    color:white;
+		background:blue;
+    }
+	#popupcalendartablesavecancelbox {
+	    position: absolute;
+	    top: 772px;
+		left: 0%;
+        height:40px;
+        width:100%;
+  	    z-index:310;
+	    box-sizing: border-box;
+		background: #3B393A;
+		color: white;
+    }
+	#popupcalendartabledone{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#popupcalendartablecancel{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	.popupcalendartablefieldrow {
+        position:absolute;
+		top: 0%;
+		left: 0%;
+        width: 100%;
+		background: #3B393A;
+		color: white;
+	}
+	.popupcalendartablesavecancelbutton {
+        position:absolute;
+        width:71%;
+		top: 0%;
+		left: 222px;
+        border:1px solid grey;
+        border-radius:5px;
+	    text-align: center;
+	    color: white;
+        background-image: -moz-linear-gradient(top, orange, orange);
+    }
+	.firstselect {
+	   color: blue;
+	}
+    .secondselect {
+	   color: #BC0606;
+	}	
+	a:active{
+	   background: grey none no-repeat;
+	   color: white;
+	}

@@ -1,0 +1,251 @@
+    @charset "utf-8";
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	outline: 0;
+    	font-weight: inherit;
+    	font-style: inherit;
+    	font-size: 100%;
+    	font-family: inherit;
+    	vertical-align: baseline;
+    }
+    /* remember to define focus styles! */
+    :focus {
+    	outline: 0;
+    }
+    a {
+    	color: black;
+    }
+    a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+    	border: none;
+    }
+    /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+    a:link {
+    	color: black;
+    	text-decoration:none;
+    	/*text-decoration: underline;  unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+    }
+    body {
+    	line-height: normal;
+    	color: black;
+    	background: transparent;
+    	font: 16px/normal Tahoma, Arial, Helvetica, sans-serif;
+    	height: 100%;
+    }
+    textarea, input{
+    	//line-height: normal;
+    	color: black;
+    	background: white;
+    	font: 14px/normal Tahoma, Arial, Helvetica, sans-serif;
+    }
+   	ol, ul {
+    	list-style: none;
+    }
+    /* tables still need 'cellspacing="0"' in the markup */
+    table {
+    	border-collapse: separate;
+    	border-spacing: 0;
+    }
+    caption, th, td {
+    	text-align: left;
+    	font-weight: normal;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: "";
+    }
+    blockquote, q {
+    	quotes: "" "";
+    }
+    h1 {
+       color: Blue;
+       font-size:18px;
+    }
+	input:focus, select:focus, textarea:focus {
+	   outline: none;
+       border-color: #9ecaed;
+       box-shadow: 0 0 0px 3px #058FFF; 
+    }
+    .variable {
+      display:none;
+    }
+    .variable1 {
+      display:none;
+    }
+    .employeeid {
+      display:none;
+    }
+    .defaultcalendarid {
+      display:none;
+    }
+    .employeeinitials {
+      display:none;
+    }
+	#indexcontainer {
+	    display: block;
+        position:absolute;
+		height: 100%;
+        width: 100%;
+        margin:0 auto;
+		background: black;
+    }
+	#indexheader {
+	    display: block;
+        position:absolute;
+		height: 20%;
+        width: 100%;
+		text-align: center;
+		background: black;
+		color: orange;
+	}
+	#indexbuttoncontainer {
+	    display: block;
+        position:absolute;
+		top: 20%;
+		height: 80%;
+        width: 100%;
+		text-align: center;
+		background: black;
+    }
+	.employee{
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#cancelfieldrow {
+	    display: none;
+        position:absolute;
+		height: 100%;
+        width: 100%;
+        margin:0 auto;
+		background-color:rgba(0,0,0,0.8);
+		z-index: 2999;
+	}
+	#confirmcancel{
+        position: relative;
+		top: 40%;
+	    display: block;
+  	    z-index: 3000;
+	    border: 1px solid black;
+	    background: white;
+	    color: black;
+	    box-sizing: border-box;
+	    width: 30%;
+		height: 125px;
+        margin:0 auto;
+		opacity: 1;
+    }
+	.cancelcol {
+	    display: inline-block;
+        position: relative;
+        width: 100%;
+		vertical-align: top;
+        text-align: center;
+	}
+	#yesbutton {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#nobutton {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#rightclickfieldrow {
+	    display: none;
+        position:absolute;
+		height: 100%;
+        width: 100%;
+        margin:0 auto;
+		background-color:rgba(0,0,0,0.4);
+		z-index: 2999;
+	}
+	#rightclickmenu{
+        position: absolute;
+	    display: block;
+  	    z-index: 3000;
+	    border: 1px solid black;
+	    background: white;
+	    color: black;
+	    box-sizing: border-box;
+	    width: 10%;
+		height: auto;
+        margin:0 auto;
+		opacity: 1;
+    }
+	.rightclickcol {
+	    display: inline-block;
+        position: relative;
+        width: 100%;
+		vertical-align: top;
+        text-align: left;
+		padding: 5px 0px 5px 0px;
+		border-bottom: 1px solid grey;
+	}
+	.rightclickbutton {
+        padding: 0;
+		border: none;
+	    display:inline-block;	
+		background: none;
+		color: black;
+	}
+	#searchfieldrow {
+	    display: none;
+        position:absolute;
+		height: 100%;
+        width: 100%;
+        margin:0 auto;
+		background-color:rgba(0,0,0,0.9);
+		z-index: 2999;
+	}
+	#searchbuttonwindow{
+        position: absolute;
+		top: 50%;
+		left: 20%;
+	    display: block;
+  	    z-index: 3000;
+	    border: 1px solid black;
+	    background: white;
+	    color: black;
+	    box-sizing: border-box;
+	    width: 60%;
+		height: auto;
+		opacity: 1;
+    }
+	.searchfieldrow {
+	    display: inline-block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+		padding: 5px 0px 5px 0px;
+		border-bottom: 1px solid grey;
+	}
+    .menubutton {
+        position: relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }

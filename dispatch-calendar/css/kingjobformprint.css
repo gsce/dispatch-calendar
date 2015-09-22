@@ -1,0 +1,130 @@
+﻿@charset "utf-8";
+@media print {
+	.variables {
+        display:none;
+ 	}
+
+    /* table header box */	
+	
+	#jobformcontainer {
+	    display: block;
+        position:absolute;
+	    width: 100%;
+	    left: 0%;
+	    height: 100%;
+	    margin:0 auto;
+    }
+
+	#jobformleftboxdiv {
+	    display: block;
+		position: absolute;
+	    width: 54%;
+		top: 1%;
+	    left: 0%;
+	    height: 80%;
+		color: black;
+		//border: 3px solid black;
+    }
+
+	.jobformleftfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0% 0% 0%;
+	}
+	.jobformleftfieldrow1 {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0% 0% 0%;
+		background: black;
+	}
+    
+	/** This styles the field name and positions it in the row */ 
+	.jobformleftfieldnamecol1{
+  	    display: inline-block;
+        position:relative;
+        left:0%;
+        width:25%;
+		vertical-align: top;
+        text-align:right;
+	}
+	
+	/** This styles the input field and positions it in the row */ 
+	.jobformleftfieldcol2 {
+	    display: inline-block;
+        position:relative;
+	    left:1%;
+        width:60%;
+		vertical-align: top;
+        text-align:left;
+	}
+
+	/** This styles the field name and positions it in the row */ 
+	.jobformleftfieldnamecol3 {
+  	    display: inline-block;
+        position:relative;
+        left:0%;
+        width:49%;
+		vertical-align: top;
+        text-align:right;
+	}
+	
+	/** This styles the input field and positions it in the row */ 
+	.jobformleftfieldcol4{
+	    display: inline-block;
+        position:relative;
+	    left:1%;
+        width:49%;
+		vertical-align: top;
+        text-align:left;
+	}
+	
+	#jobformcenterboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 44%;
+		top: 1%;
+	    left: 55%;
+	    height: 18%;
+		color: black;
+		//border: 3px solid black;
+    }
+
+	#jobformrightboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 35%;
+		top: 1%;
+	    left: 64%;
+	    height: 29%;
+		color: black;
+    }
+	
+    #jobformcenterhorizontalboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 44%;
+	    left: 55%;
+		top: 20%;
+	    height: 52%;
+		color: black;
+		vertical-align: top;
+		//border: 3px solid black;
+    }
+	.test {
+		color: black;
+	}
+	
+    #jobformcenterbottomboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 44%;
+	    left: 55%;
+        top: 73%;
+	    height: 8%;
+		opacity: 1;
+		color: black;
+		//border: 3px solid black;
+		vertical-align: top;
+    }
+	
+}

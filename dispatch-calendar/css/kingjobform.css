@@ -1,0 +1,369 @@
+﻿@charset "utf-8";
+ 	#jobformtablepagebox {
+        position:absolute;
+	    width: 100%;
+	    height: 100%;
+	    z-index:0;
+	//    border: 1px solid blue;
+	    margin:0 auto;
+	}
+
+	.variables {
+        display:none;
+ 	}
+
+    /* table header box */	
+	
+	#jobformiframe{
+	    position: absolute;
+	    top:0%;
+		left: 0%;
+        height:100%;
+        width:100%;
+	  	background: transparent;
+		transition: all .5s;
+
+    }
+
+	#jobformtablefooterbox {
+	    top:10%;
+        width:60%;
+        border:1px solid grey;
+        border-radius:5px;
+        box-shadow: 5px 5px 10px #888888;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+	    background-color: blue;
+    }
+
+	#jobformcontainer {
+	    display: block;
+        position:absolute;
+	    width: 100%;
+	    left: 0%;
+	    height: 100%;
+	    z-index:10;
+	   // border: 1px solid blue;
+	    //background: yellow;
+        background: #3B393A;
+	    margin:0 auto;
+    }
+
+	.jobformheader{
+	    width:30%;
+	    margin:0 auto;
+	    text-align:center;
+	    border:1px solid gray;
+	    box-shadow: 5px 5px 10px #888888;
+	    border-radius:5px;
+	    background: -o-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -ms-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -webkit-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+	}
+	#jobformtopboxdiv {
+	    display: block;
+		position: absolute;
+	    width: 100%;
+	    left: 0%;
+	    height: 7%;
+	    z-index:10;
+	    //border: 1px solid blue;
+        //background: green;
+    }
+	#jobformleftboxdiv {
+	    display: block;
+		position: absolute;
+	    width: 32%;
+		top: 1%;
+	    left: 0%;
+	    height: 70%;
+	    z-index:10;
+	    //border: 1px solid blue;
+        //background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		background: #3B393A;
+		color: white;
+    }
+
+	.jobformleftfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0% 0% 0%;
+       // border:1px solid blue;
+	}
+	.jobformleftfieldrow1 {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0% 0% 0%;
+       // border:1px solid blue;
+		background: black;
+	}
+    
+	/** This styles the field name and positions it in the row */ 
+	.jobformleftfieldnamecol1{
+  	    display: inline-block;
+        position:relative;
+        left:0%;
+        width:25%;
+        //border:1px solid blue;
+		vertical-align: top;
+        text-align:right;
+	}
+	
+	/** This styles the input field and positions it in the row */ 
+	.jobformleftfieldcol2 {
+	    display: inline-block;
+        position:relative;
+        //border:1px solid blue;
+	    left:1%;
+        width:60%;
+		vertical-align: top;
+        text-align:left;
+	}
+
+	/** This styles the field name and positions it in the row */ 
+	.jobformleftfieldnamecol3 {
+  	    display: inline-block;
+        position:relative;
+        left:0%;
+        width:49%;
+       // border:1px solid blue;
+		vertical-align: top;
+        text-align:right;
+        //background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		//background: black;
+	}
+	
+	/** This styles the input field and positions it in the row */ 
+	.jobformleftfieldcol4{
+	    display: inline-block;
+        position:relative;
+	    left:1%;
+        width:49%;
+       // border:1px solid blue;
+		vertical-align: top;
+        text-align:left;
+		//background: black;
+	}
+	
+	#jobformcenterboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 32%;
+		top: 1%;
+	    left: 32%;
+	    height: 29%;
+	    z-index:10;
+	    //border: 1px solid blue;
+        //background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		//background: #3B393A;
+		background: #3B393A;
+		color: white;
+    }
+
+	#jobformrightboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 36%;
+		top: 1%;
+	    left: 64%;
+	    height: 29%;
+	    z-index:10;
+	    //border: 1px solid blue;
+        //background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		background: #3B393A;
+		color: white;
+    }
+	
+    #jobformcenterhorizontalboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 68%;
+	    left: 32%;
+		top: 30%;
+	    height: 39%;
+	    z-index: 1000;
+	  //  border: 1px solid blue;
+        background: #f2f2f2;
+		color: black;
+    }
+	.test {
+	    background-color: #3B393A;
+		color: white;
+		
+	}
+	
+    #jobformbottomboxdiv {
+	    display: block;
+        position:absolute;
+	    width: 100%;
+	    left: 0%;
+        top: 73%;
+	    height: 27%;
+	    z-index:10000;
+	    //border: 1px solid blue;
+        background: transparent;
+		opacity: 0;
+		transition: all .5s;
+    }
+
+	.jobformsavecancelbutton {
+        position:relative;
+        width:99%;
+		height:10%;
+		border:none;
+        // border: 1px solid grey;
+        // border-radius:5px;
+        // box-shadow: 5px 5px 10px #888888;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+        //background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: transparent;
+        // background-color: blue;
+    }
+	
+ 	#jobformdone{
+        position:relative;
+	   // float: left;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	
+	#jobformcancel{
+        position:relative;
+	   // float: left;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	
+	#jobformprint{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#jobformmove{
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		height: 22px;
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+    #popup{
+        position:absolute;
+	    display:none;
+  	    z-index:300;
+	    top:500px;
+	    left:650px;
+	    border: 1px solid black;
+	    background:grey;
+	    color:white;
+	    box-sizing: border-box;
+	    width: 500px;
+	    height: auto;
+	    word-wrap: break-word;
+    }
+
+	#movefieldrow {
+	    display: none;
+        position:absolute;
+		height: 100%;
+        width: 100%;
+        margin:0 auto;
+		background-color:rgba(0,0,0,0.8);
+		//background: black;
+		z-index: 2999;
+	}
+	
+	#confirmmove{
+        position: relative;
+		top: 40%;
+	    display: block;
+  	    z-index: 3000;
+	    border: 1px solid black;
+	    background: white;
+	    color: black;
+	    box-sizing: border-box;
+	    width: 30%;
+		height: 150px;
+        margin:0 auto;
+		opacity: 1;
+    }
+	.movecol {
+	    display: inline-block;
+        position: relative;
+        width: 100%;
+		vertical-align: top;
+        text-align: center;
+	}
+	#movecancelbutton {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#movecontinuebutton {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#jobformfixdayof {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#jobformimport {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+	#jobformcalendaricon {
+		vertical-align: top;
+	}
+	#jobformdonotprintcheckbox {
+	    color: white;
+		//background: #3B393A;
+		background: #BC0606;
+	}
+	#jobformtentitivecheckbox {
+	    color: white;
+		background: #00295F;
+	}
+	#jobformcancelledcheckbox {
+	    color: white;
+		background: blue;
+	}

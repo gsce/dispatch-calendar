@@ -1,0 +1,1 @@
+UPDATE contacts LEFT JOIN table9 ON table9.`COL1` = contacts .`LINE5` SET `PHONE1` = CONCAT('W ',`COL 10`) WHERE `COL 12` != '' AND `COL 10` != '' 

@@ -1,0 +1,288 @@
+﻿@charset "utf-8";
+ 	#employeetablepagebox {
+        position:absolute;
+	    width: 100%;
+	    height: 100%;
+	    z-index:0;
+		background: black;
+	    margin:0 auto;
+	}
+
+	.variables {
+        display:none;
+ 	}
+
+    /* table header box */	
+ 
+	#employeetableheaderbox {
+        position:relative;
+	    top:5%;
+        width:30%;
+        border:1px solid grey;
+        border-radius:5px;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+	    background-color: #3B393A;
+    }
+	#employeetabletableheaderbox {
+        position:relative;
+	    top:8%;
+        height:5%;
+        width:80%;
+        border:1px solid grey;
+        border-radius:5px;
+        margin:0 auto;
+		background: #3B393A;
+    }
+    
+	#employeetableheadertable {
+        table-layout:fixed;
+        width:100%;
+		height: 100%;
+ 	}	  
+	#employeetableheadertable th,td {
+        padding: 5px;
+    }
+
+	#employeetableheadertable th {
+        color: white;
+        background-color: #3B393A;
+    }
+	
+    #employeetableheadertable tr:nth-child(even) { /*(even) or (2n 0)*/
+        background: #DCDCDC;
+    }
+
+    #employeetableheadertable tr:nth-child(odd) { /*(odd) or (2n 1)*/
+        background: WHITE;
+    }
+ 
+	#employeetablebox{
+        position:relative;
+	    top:9%;
+        height:70%;
+        width:80%;
+        border:1px solid grey;
+        border-radius:5px;
+		overflow-y: scroll;
+        margin:0 auto;
+    }
+	
+    #employeetable {
+        table-layout:fixed;
+        width:100%;
+        overflow: scroll;
+ 	}	  
+	
+	#employeetable th,td {
+        padding: 5px;
+    }
+
+	#employeetable th {
+        color: white;
+        background-color: #3B393A;
+    }
+	
+    #employeetable tr:nth-child(even) { /*(even) or (2n 0)*/
+        background: #DCDCDC;
+    }
+
+    #employeetable tr:nth-child(odd) { /*(odd) or (2n 1)*/
+        background: WHITE;
+    }
+	
+	.employeetablecol1{
+        padding: 5px;
+  	    text-align: left;
+    }
+
+	.employeetablecol2{
+        padding: 5px;
+  	    text-align: left;
+	}
+
+	.employeetablecol3{
+        padding: 5px;
+  	    text-align: left;
+	}
+
+	.employeetablecol4{
+        padding: 5px;
+  	    text-align: left;
+	}
+	.employeetablecol5{
+        padding: 5px;
+  	    text-align: left;
+	}
+	.employeetablecolscrollbar{
+        width: 17px;
+  	    text-align: left;
+	}
+
+	.employeetablecolhidden{
+	    display: none;
+	}
+
+	#employeetablefooterbox {
+        position:relative;
+	    top:10%;
+        width:60%;
+        border:1px solid grey;
+        border-radius:5px;
+		height: 27px;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+	    background-color: #3B393A;
+    }
+
+ 	/* Styles add account button*/
+	#employeetableadd {
+        position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	/* Styles update account button */
+
+	#employeetabledone{
+	    position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#employeeformdone{
+	    position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#employeeformcancel{
+	    position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#employeetableprint{
+	    position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#employeeformprint{
+	    position:relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+
+	#employeeformcontainer {
+	    display: none;
+        position:absolute;
+	    width: 100%;
+	    left: 0%;
+	    height: 100%;
+	    z-index:10;
+        background: black;
+		color: white;
+	    margin:0 auto;
+    }
+
+	.employeeformheader{
+	    position:relative;
+	    width:30%;
+	    margin:0 auto;
+	    text-align:center;
+	    border:1px solid gray;
+	    border-radius:5px;
+		background: #3B393A;
+		color: white;
+	}
+
+	.employeeformfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 15px 0 0 0;
+		z-index: 120;
+	}
+    
+	/** This styles the field name and positions it in the row */ 
+	.employeeformfieldnamecol1{
+  	    display: inline-block;
+        position:relative;
+        width:25%;
+		vertical-align: top;
+        text-align:right;
+	}
+	
+	/** This styles the input field and positions it in the row */ 
+	.employeeformfieldcol2 {
+	    display: inline-block;
+        position:relative;
+	    left:1%;
+        width:70%;
+		vertical-align: top;
+        text-align:left;
+	}
+
+	.employeeformsavecancelbutton {
+        position:relative;
+        width:70%;
+        border:1px solid grey;
+        border-radius:5px;
+		height: 28px;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+        background: #3B393A;
+    }
+	#employeeformfieldbackground {
+	    display: block;
+        position:absolute;
+	    width: 55%;
+	    left: 26%;
+		top: 8%;
+	    height: 81%;
+	    z-index:100;
+        background: grey;
+		color: white;
+    }
+ 
+    #popup{
+        position:absolute;
+	    display:none;
+  	    z-index:300;
+	    top:500px;
+	    left:650px;
+	    border: 1px solid black;
+	    background:grey;
+	    color:white;
+	    box-sizing: border-box;
+	    width: 500px;
+	    height: auto;
+	    word-wrap: break-word;
+    }

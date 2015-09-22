@@ -1,0 +1,1207 @@
+@charset "utf-8";
+    .variables {
+        display:none;
+    }
+    #popupheader{
+        position:absolute;
+	    display:none;
+	    z-index:300;
+	    top:475px;
+	    left:650px;
+	    border: 1px solid black;
+	    background:orange;
+	    box-sizing: border-box;
+	    width: 500px;
+	    height: auto;
+	    color: black;
+	    word-wrap: break-word;
+    }
+    #popup{
+        position:absolute;
+	    display:none;
+  	    z-index:300;
+	    top:500px;
+	    left:650px;
+	    border: 1px solid black;
+        background: white;
+	    color: black;
+	    box-sizing: border-box;
+	    width: 500px;
+	    height: auto;
+	    word-wrap: break-word;
+    }
+    .container { 
+        position: absolute;
+	    box-sizing: border-box;
+        width: 100%;
+	    height: 98%;
+    }
+    .header {
+        position: relative;
+	    box-sizing: border-box;
+        width: 100%;
+	    height: 3%;
+	    text-align: center;
+        background-color: black;
+		color: white;
+    }
+    .leftandrightmenucontainer {
+        position: relative;
+	    box-sizing: border-box;
+        width: 100%;
+	    height: 3%;
+       	background-color: black;
+    }
+    .topleftmenu { 
+  	    display: inline-block;
+        position: relative;
+	    box-sizing: border-box;
+        width: 39%;
+	    height: auto;
+        background-color:black;
+    }
+    .toprightmenu { 
+  	    display: inline-block;
+        position: relative;
+	    box-sizing: border-box;
+        width: 61%;
+	    height: auto;
+        background-color:black;
+    }
+    #columncontainer {
+        display: inline-block;
+        position: relative;
+	    box-sizing: border-box;
+	    width: 100%;
+	    height: 94%;
+    }
+    #leftcolumncontainer {
+        display: inline-block;
+        position: relative;
+	    box-sizing: border-box;
+ 	    width: 36%;
+	    height: 99%;
+        transition: all .5s;
+    }
+    #centercolumncontainer {
+        display: inline-block;
+        position: relative;
+	    box-sizing: border-box;
+ 	    width: 1%;
+	    height: 99%;
+		color: white;
+    	background-color: black;
+		vertical-align: top;
+	}
+	#centercolumncontainertop {
+        display: block;
+        position: relative;
+	    box-sizing: border-box;
+ 	    width: 1%;
+		top: 50%;
+    }
+    #rightcolumncontainer {
+        display: inline-block;
+        position: relative;
+	    box-sizing: border-box;
+     	width: 63%;
+    	height: 99%;
+        background-color: white;
+    }
+    #calendarcontainer {
+        display: block;
+        position: absolute;
+	    box-sizing: border-box;
+    	width: 100%;
+    	height: 55%;
+    }
+    #photo {
+        opacity:.9;
+    }
+    #yearcontainer {
+        display: block;
+        position: absolute;
+	    box-sizing: border-box;
+    	top: 10%;
+    	left: 37%;
+    	width: 56%;
+    	color:red;
+    	font-weight: bold;
+    	text-align: center;
+    }
+    #yearcontainerbuttonleft{
+        position: absolute;
+    	left:1%;
+    }
+    #yearcontainerbuttonright{
+        position: absolute;
+        right: 1%;
+     
+    }
+    #previousmonthcontainer {
+        display: block;
+        position: absolute;
+	    box-sizing: border-box;
+    	top: 3%;
+    	width: 29%;
+    	color: black;
+    	text-align: center;
+    }
+    #previousmonthdaycontainer {
+        position: absolute;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	top: 10%;
+    	width: 29%;
+    	border-style: none;
+    	border-bottom: 1px solid black;
+    	padding: 0px 4px 0px 4px;
+    }
+    .previousmonthdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	width: 100%;
+    	text-align: center;
+    	color: #FF6300;
+    	font-size: small;
+    	font-weight: bold;
+        border: 1px solid transparent;
+    	background: transparent;
+    }
+    #previousmonthcalendartable {
+        position: absolute;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	top: 16%;
+    	width: 29%;
+    	border: 1px solid transparent;
+    	padding: 0px 3px 4px 2px;
+    }
+    .previousmonthcalendarsundaysaturdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+    	font-size: small;
+        border: 1px solid transparent;
+    	color: #B0B0B0 ;
+    }
+    td.previousmonthcalendarsundaysaturdaycell:hover {
+        color: red;
+    	background: #D0D0D0;
+    	cursor: context-menu;
+    }
+    .previousmonthcalendarweekdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+    	font-size: small;
+        border: 1px solid transparent;
+    }
+    td.previousmonthcalendarweekdaycell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    .previousmonthcalendartodaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+        border: 1px solid grey;
+    	font-weight: bold;
+    	color: white;
+    	background: orange;
+    }
+    td.previousmonthcalendartodaycell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    .previousmonthcalendarblankcell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+        border: 1px solid transparent;
+    	color: #B0B0B0;
+    }
+    #nextmonthcontainer {
+        display: block;
+        position: absolute;
+	    box-sizing: border-box;
+    	top: 46%;
+    	width: 29%;
+		color: black;
+    	text-align: center;
+    }
+    #nextmonthdaycontainer {
+        position: absolute;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	top: 52%;
+    	width: 29%;
+    	border-bottom: 1px solid black;
+    	padding: 0px 4px 0px 4px;
+    }
+    .nextmonthdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	text-align: center;
+    	color: #FF6300;
+    	font-size: small;
+    	font-weight: bold;
+        border: 1px solid transparent;
+    }
+    #nextmonthcalendartable {
+        position: absolute;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	top: 57%;
+    	width: 29%;
+    	border: 1px solid transparent;
+    	padding: 0px 3px 4px 2px;
+    }
+    .nextmonthcalendarsundaysaturdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+    	font-size: small;
+        border: 1px solid transparent;
+    	color: #B0B0B0;
+    }
+    td.nextmonthcalendarsundaysaturdaycell:hover {
+        color: red;
+    	background: #D0D0D0;
+    	cursor: context-menu;
+    }
+    .nextmonthcalendarweekdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+    	font-size: small;
+        border: 1px solid transparent;
+    }
+    td.nextmonthcalendarweekdaycell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    .nextmonthcalendartodaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+        border: 1px solid grey;
+    	font-weight: bold;
+    	color: white;
+    	background: orange;
+    }
+    td.nextmonthcalendartodaycell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    .nextmonthcalendarblankcell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 4%;
+    	text-align: center;
+        border: 1px solid transparent;
+    	color: #B0B0B0;
+    }
+    #daycontainer {
+        position: absolute;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	top: 18%;
+    	left:37%;
+    	width: 56%;
+    	border-bottom: 1px solid black;
+    	padding: 0px 4px 0px 4px;
+    }
+    .daycell {
+        position: relative;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	text-align: center;
+    	color: black;
+    	font-weight: bold;
+    }
+    #calendartable {
+        position: absolute;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	top: 26%;
+    	left:37%;
+    	width: 56%;
+    	height: 55%;
+    	padding: 0px 3px 4px 2px;
+    }
+    .calendarsundaysaturdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 8%;
+    	text-align: center;
+    	color: #B0B0B0;
+    }
+    td.calendarsundaysaturdaycell:hover {
+        color: red;
+    	background: #D0D0D0;
+    }
+    .calendarweekdaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 8%;
+    	text-align: center;
+    }
+    td.calendarweekdaycell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    .calendarchosendaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 8%;
+    	text-align: center;
+        border: 1px solid orange;
+    	font-weight: bold;
+    	color: white;
+    	background: #3B393A;
+    }
+    td.calendarchosendaycell:hover {
+        color: white;
+    	background: black;
+		border: 1px solid black;
+    	cursor: context-menu;
+    }
+    .calendartodaycell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 8%;
+    	text-align: center;
+        border: 1px solid grey;
+    	font-weight: bold;
+    	font-size: large;
+    	color: black;
+    	background-image: url('today.png');
+    }
+    td.calendartodaycell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    .calendarblankcell {
+        position: relative;
+	    box-sizing: border-box;
+    	width: 8%;
+    	text-align: center;
+        border: 1px solid transparent;
+    	color: #B0B0B0;
+    }
+    #monthcontainertable{
+        position: absolute;
+	    box-sizing: border-box;
+    	table-layout: fixed;
+    	top: 90%;
+    	width: 100%;	
+    	border: 1px solid transparent;
+    }
+    .monthcontainermonthcell {
+        position: relative;
+	    box-sizing: border-box;
+    	text-align: center;
+        border: 1px solid transparent;
+    	font-weight: bold;
+    	font-size: small;
+    	color: black;
+    	background: #F0F0F0;
+    	opacity: .8;
+    }
+    td.monthcontainermonthcell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    #monthcontainerpreviousyearcell {
+        position: relative;
+	    box-sizing: border-box;
+    	text-align: center;
+        border: 1px solid transparent;
+    	font-weight: bold;
+    	font-size: small;
+    	color: red;
+    	background: #F0F0F0;
+        opacity: .9;
+    }
+    #monthcontainerpreviousyearcell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    #monthcontainernextyearcell {
+        position: relative;
+	    box-sizing: border-box;
+    	text-align: center;
+        border: 1px solid transparent;
+    	font-weight: bold;
+    	font-size: small;
+    	color: red;
+    	background: #F0F0F0;
+        opacity: .9;
+    }
+    #monthcontainernextyearcell:hover {
+        color: white;
+    	background: black;
+    	cursor: context-menu;
+    }
+    #notecontainer {
+        display: block;
+	    box-sizing: border-box;
+    	position: absolute;
+    	top: 55%;
+    	width: 100%;
+    	height: 45%;
+    	background-color: purple;
+    	opacity: 1;
+		transition: all .5s;
+    }
+    #notetitlecontainer {
+        display: block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+    	background-color: black;
+    	color: white;
+    	opacity: 1;
+
+    }
+    #notetitlecontainerleft {
+        display: inline-block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 32%;
+    	text-align: left;
+    	background-color: black;
+    	color: white;
+    	opacity: 1;
+    }
+    #notetitlecontainercenter {
+        display: inline-block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 33%;
+    	text-align: center;
+    	background-color: black;
+    	color: white;
+    	opacity: 1;
+    }
+    #notetitlecontainerright {
+        display: inline-block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 33%;
+    	text-align: right;
+    	background-color: black;
+    	color: white;
+    	opacity: 1;
+    }
+    #notebuttoncontainer {
+        display: block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+    	background-color: #3B393A;
+    }
+    #notetableadd {
+	    border-radius:5px;
+        border:1px solid grey;
+	    color: black;
+		background: white;
+    }
+    #notetableprint {
+	    border-radius:5px;
+        border:1px solid grey;
+	    color: black;
+		background: white;
+    }
+    #notetabletextmessage {
+	    border-radius:5px;
+        border:1px solid grey;
+	    color: black;
+		background: white;
+    }
+    #notetablereceivedmessagesviewbutton {
+	    border-radius:5px;
+        border:1px solid grey;
+	    color: black;
+		background: white;
+    }
+    #notetablesentmessagesviewbutton {
+	    border-radius:5px;
+        border:1px solid grey;
+	    color: black;
+		background: white;
+    }
+    #notetablecontainer {
+        display: block;
+    	position: absolute;
+	    box-sizing: border-box;
+    	width: 100%;
+    	height: 87%;
+        overflow: scroll;
+        opacity: 1;
+		background: black;
+    }
+    #notetable {
+    	table-layout: fixed;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+        opacity: 1;
+    }
+    #notetable tr:nth-child(even) { /*(even) or (2n 0)*/
+        background: #DCDCDC;
+    }
+    #notetable tr:nth-child(odd) { /*(odd) or (2n 1)*/
+        background: white;
+    }
+    #notetable tr:hover td {
+		color: white;
+        background: black;
+    }
+	#notetable tr:hover td.notetabledatecell {
+ 		color: black;
+        background: orange;
+    }
+	#notetable tr:hover td.notetabletimecell {
+ 		color: black;
+        background: orange;
+    }
+    .notetablerow {
+    	position: relative;
+	    box-sizing: border-box;
+        opacity: 1;
+    	width: 100%;
+    }
+    .notetablerownotviewed {
+    	position: relative;
+	    box-sizing: border-box;
+    	color: blue;
+    	opacity: 1;
+    }
+    .notetabledatecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 16%;
+        opacity:1;
+		background: black;
+		color: white;
+    }
+    .notetabletimecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 13%;
+        opacity: 1;
+        background: #3B393A;
+		color: white;
+    }
+    .notetablenotecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	overflow: hidden;
+    	width: 71%;
+    	white-space:nowrap;
+    	border-bottom: 1px solid black;
+    	opacity: 1;
+		color: black;
+    }
+    .notetablesentbycell {
+    	display: none;
+    	position: relative;
+	    box-sizing: border-box;
+    }
+    .notetablesenttocell {
+    	display: none;
+    	position: relative;
+	    box-sizing: border-box;
+    }
+    .notetableid {
+    	display: none;
+    	position: relative;
+	    box-sizing: border-box;
+    }
+    #jobcontainer {
+        display: block;
+    	position: absolute;
+	    box-sizing: border-box;
+    	width: 100%;
+    	height: 100%;
+		background: black;
+    }
+    #jobbuttoncontainer {
+        display: block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+		background-color: #3B393A;
+    	border-bottom: 1px solid white;
+    }
+    #jobtablecontainer{
+        display: block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+    	height: 97%;
+        overflow: scroll;
+ 		transition: all .3s;
+		background: black;
+    }
+    #jobtable {
+    	table-layout: fixed;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+        opacity:1;
+    }
+    .jobtablespacecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #565555;
+		color: white;
+    }	
+   .jobtablespacecell1 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #BC0606;
+		color: white;
+    }	
+	.jobtablespacecell2 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #B0B0B0;
+		color: white;
+    }	
+   .jobtablespacecell22 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #00295F;
+		color: white;
+    }	
+	.jobtablespacecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid white;
+    	width: 1%;
+        opacity: 1;
+		background: orange;
+		color: white;
+    }	
+	.jobtablespacecell33 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: blue;
+		color: white;
+    }	
+    .jobtablefutureviewordernumbercell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 9%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+   	    overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewnamecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #565555; 
+		color: white;
+    	overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewvannumbercell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 7%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+   	    overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewdrivercell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 8%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+   	    overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefuturevieworigincell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #BC0606;
+		color: white;
+   	    overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewdestinationcell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #BC0606;
+		color: white;
+    	overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewdeliverycell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 15%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+    	overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewtimecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 10%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+    	overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewweightcell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 7%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+		text-align: right;
+    }
+    .jobtablefutureviewnotecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 82%;
+    	border-bottom: 1px solid black;
+    	opacity: 1;
+		background: #E0E0E0;
+		//background: white;
+		color: black;
+    	overflow: hidden;
+    	white-space:nowrap;
+    }
+    .jobtablefutureviewdate {
+   	    position: relative;
+    	opacity: 1;
+		background: orange;
+		color: black;
+    }
+    .jobtabletimecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 9%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+    }
+    .jobtabletimecell2 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 8%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+		text-align: right;
+    }
+    .jobtabletimecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid white;
+    	width: 8%;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+    }
+    .jobtablejobdaytypecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 10%;
+		white-space: pre;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+		text-align: right;
+    }
+    .jobtablejobdaytypecolor {
+ 		background: blue;
+		color: white;
+    }
+    .jobtablejobdaytypecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid white;
+    	width: 9%;
+		white-space: pre;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+		text-align: right;
+    }
+    .jobtablenamecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #565555; 
+		color: white;
+    }
+    .jobtableorigincell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #BC0606;
+		color: white;
+    }
+    .jobtablephonecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #00295F;
+		color: white;
+    }
+    .jobtablephonecell2 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #00295F;
+		color: white;
+    }
+    .jobtablephonecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: blue;
+		color: white;
+    }
+    .jobtablenotecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 82%;
+    	border-bottom: 1px solid black;
+    	opacity: 1;
+		background: #B0B0B0;
+		color: black;
+    }
+   .jobtablenumberofmencell {
+    	position: relative;
+    	opacity: 1;
+		background: orange;
+		color: black;
+    	border-bottom: 1px solid white;
+    }
+	.jobtablenamesofmencell {
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 82%;
+    	border-bottom: 1px solid white;
+    	opacity: 1;
+		background: white;
+		color: black;
+    }
+   .jobtablevannumbercell {
+    	position: relative;
+    	opacity: 1;
+		background: orange;
+		color: black;
+    	border-bottom: 1px solid white;
+    }
+   .jobtabledrivercell {
+    	position: relative;
+    	opacity: 1;
+		background: #0088FF;
+		color: white;
+    	border-bottom: 1px solid white;
+    }
+	.jobtablecolhidden{
+	    display: none;
+	}
+	#defaultcalendarid {
+        color: white;
+    }
+	#noteformcontainer {
+	    display: none;
+        position:absolute;
+	    box-sizing: border-box;
+	    width: 100%;
+	    height: 100%;
+        top: 0%;
+	    z-index:500;
+  	    color: white;
+		background: black;
+    }
+	.noteformheader{
+	    position:relative;
+	    box-sizing: border-box;
+	    width:30%;
+	    margin:0 auto;
+	    text-align:center;
+	    border:1px solid gray;
+	    border-radius:5px;
+        background: #3B393A;
+		color: white;
+	}
+	.noteformfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0 0 0;
+	}
+	/** This styles the field name and positions it in the row */ 
+	.noteformfieldnamecol1{
+  	    display: inline-block;
+        position:relative;
+	    box-sizing: border-box;
+        width:25%;
+	    vertical-align: top;
+        text-align:right;
+	}
+	/** This styles the input field and positions it in the row */ 
+	.noteformfieldcol2 {
+	    display: inline-block;
+        position:relative;
+	    box-sizing: border-box;
+	    left:1%;
+        width:70%;
+	    vertical-align: top;
+        text-align:left;
+	}
+    #noteformemployeebuttons {
+        position:relative;
+	    top:10%;
+        width:60%;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+    }
+    .noteformemployee {
+	    border-radius:5px;
+        border:1px solid grey;
+	    color: white;
+		background: #3B393A;
+    }
+	.noteformsavecancelbutton {
+        position:relative;
+	    top:10%;
+        width:60%;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+    }
+	#jobaddformcontainer {
+	    display: none;
+        position:absolute;
+	    box-sizing: border-box;
+	    top: 0%;
+	    width: 100%;
+	    height: 100%;
+	    z-index:200;
+  	    background-color: #3B393A;
+	    color: white;
+    }
+	.jobaddformheader{
+	    position:relative;
+	    box-sizing: border-box;
+	    width:30%;
+	    margin:0 auto;
+	    text-align:center;
+	    border:1px solid gray;
+	    border-radius:5px;
+	    background: -o-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -ms-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -webkit-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+	    color: black;
+	}
+	.jobaddformfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0 0 0;
+	}
+	/** This styles the field name and positions it in the row */ 
+	.jobaddformfieldnamecol1{
+  	    display: inline-block;
+        position:relative;
+	    box-sizing: border-box;
+        width:40%;
+	    vertical-align: top;
+        text-align:right;
+	}
+	/** This styles the input field and positions it in the row */ 
+	.jobaddformfieldcol2 {
+	    display: inline-block;
+        position:relative;
+	    box-sizing: border-box;
+	    left:1%;
+        width:55%;
+	    vertical-align: top;
+        text-align:left;
+	}
+	.jobaddformsavecancelbutton {
+        position:relative;
+	    top:10%;
+        width:60%;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+        background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+    }
+	.jobaddformfieldrow {
+        position:relative;
+        width: 100%;
+	    margin: 1% 0 0 0;
+	}
+	#jobaddformbookingcontainer {
+	    display: none;
+        position:absolute;
+	    box-sizing: border-box;
+	    top: 0%;
+	    left:0%;
+	    width: 100%;
+	    height: 100%;
+	    z-index:300;
+	    border: 1px solid white;
+  	    background-color: #3B393A;
+	    color: white;
+    }
+	.jobaddformbookingheader{
+	    position:relative;
+	    box-sizing: border-box;
+	    width:30%;
+	    margin:0 auto;
+	    text-align:center;
+	    border:1px solid gray;
+	    border-radius:5px;
+	    background: -o-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -ms-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: -webkit-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+        background: linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+	    color: black;
+	}
+    /** This styles the field name and positions it in the row */ 
+	.jobaddformbookingfieldnamecol1{
+  	    display: inline-block;
+        position:relative;
+	    box-sizing: border-box;
+        width:40%;
+	    vertical-align: top;
+        text-align:right;
+	}
+	/** This styles the input field and positions it in the row */ 
+	.jobaddformbookingfieldcol2 {
+	    display: inline-block;
+        position:relative;
+	    box-sizing: border-box;
+	    left:1%;
+        width:55%;
+	    vertical-align: top;
+        text-align:left;
+	}
+	.jobaddformbookingsavecancelbutton {
+        position:relative;
+	    top:10%;
+        width:60%;
+        margin:0 auto;
+	    text-align: center;
+	    color: white;
+        background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+    }
+	#notetablesearchfieldrow {
+	    display: none;
+        position:absolute;
+		height: 100%;
+        width: 100%;
+        margin:0 auto;
+		background-color:rgba(0,0,0,0.9);
+		z-index: 2999;
+	}
+	#notetablesearchbuttonwindow{
+        position: absolute;
+		top: 50%;
+		left: 20%;
+	    display: block;
+  	    z-index: 3000;
+	    border: 1px solid black;
+	    background: white;
+	    color: black;
+	    box-sizing: border-box;
+	    width: 60%;
+		height: auto;
+		opacity: 1;
+    }
+	.notetablesearchfieldrow {
+	    display: inline-block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+		padding: 5px 0px 5px 0px;
+		border-bottom: 1px solid grey;
+	}

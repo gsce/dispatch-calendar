@@ -1,0 +1,189 @@
+ 	    <div id='<?php echo $form_table; ?>bottomboxdiv'>
+	      <?php
+            $form_table = "jobform";
+    	    include "databaseconnect.php";
+            if (mysqli_connect_errno($con)) {
+                echo "Failed to connect to MySQL: " . die();
+            }
+            $result = mysqli_query($con, "SELECT * FROM job_date WHERE job_date.`AUTOMATIC_NUMBER` = '$automatic_number' ORDER BY job_date.AUTOMATIC_NUMBER ASC"); 
+		    $numberOfRows = mysqli_num_rows($result) ;
+            mysqli_close($con); 
+            $row = mysqli_fetch_array($result);
+          ?>	
+          <div class='variables'>
+	      	<input type='text' id='<?php echo $form_table; ?>calendarid' name='<?php echo $form_table; ?>calendarid' value=''>
+	      	<input type='text' id='<?php echo $form_table; ?>calendaremployeeid' name='<?php echo $form_table; ?>calendaremployeeid' value=''>
+	      	<input type='text' id='<?php echo $form_table; ?>calendaremployeename' name='<?php echo $form_table; ?>calendaremployeename' value=''>
+	      	<input type='text' id='<?php echo $form_table; ?>calendardateholder' name='<?php echo $form_table; ?>calendardateholder' value=''>
+	        <input type='text' id='<?php echo $form_table; ?>action' name='<?php echo $form_table; ?>action' value = ''>
+	        <input type='text' id='whereupdated' name='whereupdated' value = '<?php echo $action; ?>'>
+	        <input type='text' id='<?php echo $form_table; ?>calendarnumber' name='<?php echo $form_table; ?>calendarnumber' value = ''>
+  	        <input type='text' id='<?php echo $form_table; ?>jobnumber' name='<?php echo $form_table; ?>jobnumber' value = '<?php echo $job_number; ?>'>
+ 	        <input type='text' id='<?php echo $form_table; ?>automaticnumber' name='<?php echo $form_table; ?>automaticnumber' value = ''>
+ 	        <input type='text' id='<?php echo $form_table; ?>jobautomaticnumber' name='<?php echo $form_table; ?>jobautomaticnumber' value = '<?php echo $automatic_number; ?>'>
+	      </div>
+	      <div id='mainboxdiv'>
+	        <div class='<?php echo $form_table; ?>leftboxdiv'>
+              <div class='<?php echo $form_table; ?>fieldrow'>
+	            <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	              Calendar
+		          <input type='text' tabindex = '1' id='<?php echo $form_table; ?>calendarname' value='<?php echo $row['CALENDAR_NAME']; ?>'>
+                </div>
+              </div>
+              <div class='<?php echo $form_table; ?>fieldrow'>
+	            <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	              Job Desc
+		        </div>
+	            <div class='<?php echo $form_table; ?>fieldcol2'>
+		          <input type='text' tabindex = '2' id='<?php echo $form_table; ?>jobdaytype' value=''>
+                </div>
+              </div>
+              <div class='<?php echo $form_table; ?>fieldrow' id='<?php echo $form_table; ?>numberofdaysrow'>
+	            <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	              No. Days 
+		        </div>
+	            <div class='<?php echo $form_table; ?>fieldcol2'>
+		          <input type='text' tabindex = '3' id='<?php echo $form_table; ?>numberofdays' size='6' maxlength='6' value=''>
+                </div>
+              </div>
+              <div class='<?php echo $form_table; ?>fieldrow'>
+	            <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	              Job Date
+		        </div>
+              </div>
+              <div class='<?php echo $form_table; ?>fieldrow'>
+	            <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	              Time
+		        </div>
+	            <div class='<?php echo $form_table; ?>fieldcol2'>
+                </div>
+		      </div>
+            </div> <!-- end mainboxdiv -->
+          </div>
+        </div> <!-- end bottomboxdiv -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id='<?php echo $form_table; ?>center1boxdiv'>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Weight 
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex = '7' id='<?php echo $form_table; ?>7' name='<?php echo $form_table; ?>weight' size='6' maxlength='6' value=''>
+                      </div>
+                    </div>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Hours
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex = '8' id='<?php echo $form_table; ?>8' name='<?php echo $form_table; ?>jobhours' size='10' maxlength='10' value=''>
+                      </div>
+                    </div>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Rate
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex='9' id='<?php echo $form_table; ?>9' name='<?php echo $form_table; ?>rate' size='10' maxlength='10' value=''>
+                      </div>
+                    </div>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Cost 
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex='10' id='<?php echo $form_table; ?>10' name='<?php echo $form_table; ?>cost' size='10' maxlength='10' value=''>
+                      </div>
+                    </div>
+		          </div>
+   	              <div id='<?php echo $form_table; ?>center2boxdiv'>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Number Of Men  
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex='11' id='<?php echo $form_table; ?>11' name='<?php echo $form_table; ?>numberofmen' size='3' maxlength='3' value=''>
+                      </div>
+                    </div>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Driver(s)
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex = '12' id='<?php echo $form_table; ?>12' name='<?php echo $form_table; ?>driver' size='25' maxlength='50' value=''>
+                      </div>
+                    </div>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Names of Help
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex = '13' id='<?php echo $form_table; ?>13' name='<?php echo $form_table; ?>namesofmen' size='55' maxlength='150' value=''>
+                      </div>
+                    </div>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Driver Number(s)
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex = '14' id='<?php echo $form_table; ?>14' name='<?php echo $form_table; ?>drivernumber' size='25' maxlength='25' value=''>
+                      </div>
+                    </div>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Truck Number(s) 
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex = '15' id='<?php echo $form_table; ?>15' name='<?php echo $form_table; ?>trucknumber' size='25' maxlength='25' value=''>
+                      </div>
+                    </div>
+		            <div class='<?php echo $form_table; ?>fieldrow'>
+                      <div class='<?php echo $form_table; ?>fieldnamecol1'>
+                        Trailer Number(s)
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <input type='text' tabindex = '16' id='<?php echo $form_table; ?>16' name='<?php echo $form_table; ?>trailernumber' size='25' maxlength='25' value=''>
+		              </div>
+		            </div>
+		          </div>
+   	              <div id='<?php echo $form_table; ?>rightboxdiv'>
+                    <div class='<?php echo $form_table; ?>fieldrow'>
+	                  <div class='<?php echo $form_table; ?>fieldnamecol1'>
+	                    Day Note
+		              </div>
+	                  <div class='<?php echo $form_table; ?>fieldcol2'>
+			            <textarea tabindex = '17' id='<?php echo $form_table; ?>17' name='<?php echo $form_table; ?>daynote' cols='30' rows='8' maxlength='1000' value=''></textarea>
+			          </div>
+			        </div>  
+                  </div> <!-- end boxdiv -->

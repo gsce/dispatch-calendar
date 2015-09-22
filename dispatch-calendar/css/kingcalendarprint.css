@@ -1,0 +1,313 @@
+@charset "utf-8";
+@media print {
+
+    .variables {
+        display:none; 
+    }
+
+    .container { 
+        position: absolute;
+	    box-sizing: border-box;
+        width: 100%;
+	    height: 100%;
+        //	border: 1px solid green;
+        //	background-color: green;
+    }
+
+	
+    #rightcolumncontainer {
+        display: inline-block;
+        position: relative;
+	    box-sizing: border-box;
+     	width: 100%;
+    	height: 100%;
+        background-color: white;
+    }
+
+    
+    
+    #jobcontainer {
+        display: block;
+    	position: absolute;
+	    box-sizing: border-box;
+    	width: 100%;
+    	height: 100%;
+		background: black;
+    //	border: 1px solid black;
+     //   background-color: blue;
+    }
+
+    #jobbuttoncontainer {
+        display: block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+		background-color: #3B393A;
+    //	height: 3%;
+    //	border: 1px solid black;
+    //  background-color: green;
+    	border-bottom: 1px solid white;
+    }
+    
+    #jobtablecontainer{
+        display: block;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+    	height: 97%;
+        overflow: scroll;
+ 		transition: all .3s;
+    //	border: 1px solid black;
+        //background-color: #3B393A;
+		background: black;
+    }
+
+    #jobtable {
+    	table-layout: fixed;
+    	position: relative;
+	    box-sizing: border-box;
+    	width: 100%;
+    //	border: 1px solid black;
+        opacity:1;
+    }
+	.jobtablerow {
+    	position: relative;
+    	width: 100%;
+    	background : black;
+	}
+    .jobtablespacecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #565555;
+		color: white;
+    }	
+   .jobtablespacecell1 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #BC0606;
+		color: white;
+    }	
+	.jobtablespacecell2 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #B0B0B0;
+		color: white;
+    }	
+   .jobtablespacecell22 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: #00295F;
+		color: white;
+    }	
+	.jobtablespacecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid white;
+    	width: 1%;
+        opacity: 1;
+		background: orange;
+		color: white;
+    }	
+
+	.jobtablespacecell33 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 1%;
+        opacity: 1;
+		background: blue;
+		color: white;
+    }	
+    .jobtablefutureviewdate {
+   	    position: relative;
+    	opacity: 1;
+		background: orange;
+		color: black;
+    }
+ 	
+    .jobtabletimecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 9%;
+        opacity: 1;
+		// background: #BC0606;
+		background: #3B393A;
+		color: white;
+    }
+    .jobtabletimecell2 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 8%;
+        opacity: 1;
+		// background: #BC0606;
+		background: #3B393A;
+		color: white;
+		text-align: right;
+    }
+    .jobtabletimecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid white;
+    	width: 8%;
+        opacity: 1;
+		// background: #BC0606;
+		background: #3B393A;
+		color: white;
+    }
+    .jobtablejobdaytypecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid #3B393A;
+    	width: 10%;
+		white-space: pre;
+        opacity: 1;
+		background: #3B393A;
+		color: white;
+		text-align: right;
+    }
+
+    .jobtablejobdaytypecolor {
+ 		background: blue;
+		color: white;
+    }
+    .jobtablejobdaytypecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid white;
+    	width: 9%;
+		white-space: pre;
+        opacity: 1;
+		// background: #BC0606;
+		background: #3B393A;
+		color: white;
+		text-align: right;
+    }
+	 
+    .jobtablenamecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #565555; 
+		color: white;
+    }
+
+    .jobtableorigincell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #BC0606;
+		color: white;
+    }
+
+    .jobtablephonecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #00295F;
+		color: white;
+    }
+
+    .jobtablephonecell2 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: #00295F;
+		color: white;
+    }
+ 
+    .jobtablephonecell3 {
+    	position: relative;
+	    box-sizing: border-box;
+    	border-bottom: 1px solid black;
+    	width: 14%;
+        opacity: 1;
+		background: blue;
+		color: white;
+    }
+
+    .jobtablenotecell {
+    	position: relative;
+	    box-sizing: border-box;
+    	//overflow: hidden;
+    	width: 82%;
+    	//white-space:nowrap;
+    	border-bottom: 1px solid black;
+    	opacity: 1;
+		background: #B0B0B0;
+		color: black;
+    }
+   .jobtablenumberofmencell {
+    	position: relative;
+    	opacity: 1;
+		background: orange;
+		color: black;
+    	border-bottom: 1px solid white;
+    }
+	.jobtablenamesofmencell {
+    	position: relative;
+	    box-sizing: border-box;
+    	//overflow: hidden;
+    	width: 82%;
+    	//white-space:nowrap;
+    	border-bottom: 1px solid white;
+    	opacity: 1;
+		background: white;
+		color: black;
+    }
+   .jobtablevannumbercell {
+    	position: relative;
+    	opacity: 1;
+		background: orange;
+		color: black;
+    	border-bottom: 1px solid white;
+    }
+   .jobtabledrivercell {
+    	position: relative;
+    	opacity: 1;
+		background: #0088FF;
+		color: white;
+    	border-bottom: 1px solid white;
+    }
+	
+	.jobtablecolhidden{
+	    display: none;
+	}
+	.jobtableemptyrow{
+    	position: relative;
+	    width: 100%;
+		border-top: 5px solid black;
+	}
+    
+    .menubutton {
+        position: relative;
+        border:1px solid grey;
+        border-radius:5px;
+	    display:inline-block;	
+		background: white;
+		color: black;
+	    margin:2px 3px 0px 3px;
+    }
+}
+
